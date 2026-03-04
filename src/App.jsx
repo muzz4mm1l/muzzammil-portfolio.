@@ -142,7 +142,7 @@ export default function App() {
           </div>
 
           <FadeIn delay={0.6} className="float-animation hero-img">
-            <img src="/hero_desktop.png" alt="3D Setup" style={{ width: '100%', maxWidth: '600px', filter: 'drop-shadow(0 0 40px rgba(157, 78, 221, 0.4))', borderRadius: '1rem' }} />
+            <img src="/hero_desktop.png" alt="3D Setup" style={{ width: '100%', maxWidth: '450px', filter: 'drop-shadow(0 0 40px rgba(157, 78, 221, 0.4))', borderRadius: '1rem' }} />
           </FadeIn>
         </div>
       </section>
@@ -300,7 +300,7 @@ export default function App() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>Email</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>khawajamuzzammil.hussain@gmail.com</div>
+                  <div className="contact-info-text">khawajamuzzammil.hussain@gmail.com</div>
                 </div>
               </a>
 
@@ -310,7 +310,7 @@ export default function App() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>Phone</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>+92-3128911722</div>
+                  <div className="contact-info-text">+92-3128911722</div>
                 </div>
               </a>
 
@@ -320,7 +320,7 @@ export default function App() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>LinkedIn</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>khawaja-muzzammil-hussain</div>
+                  <div className="contact-info-text">khawaja-muzzammil-hussain</div>
                 </div>
               </a>
 
@@ -330,7 +330,7 @@ export default function App() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 600, fontSize: '1.1rem' }}>Location</div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Karachi, Pakistan</div>
+                  <div className="contact-info-text">Karachi, Pakistan</div>
                 </div>
               </div>
 

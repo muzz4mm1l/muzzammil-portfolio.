@@ -274,12 +274,25 @@ a {
   transition: all 0.3s ease;
   color: var(--text-main);
   text-decoration: none;
+  min-width: 0;
+}
+
+.contact-item>div:last-child {
+  min-width: 0;
+  flex: 1;
 }
 
 .contact-item:hover {
   background: rgba(157, 78, 221, 0.1);
   border-color: rgba(157, 78, 221, 0.3);
   transform: translateX(5px);
+}
+
+.contact-info-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 
 /* Responsive Utils */
@@ -311,7 +324,7 @@ a {
 
 .hero-title {
   font-size: 5rem;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
@@ -409,11 +422,18 @@ a {
     transform: translateY(0);
   }
 
+  #hero {
+    align-items: flex-start;
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
-    padding-top: 10rem;
-    gap: 3rem;
+    padding-top: 8rem;
+    gap: 2rem;
+    width: 100%;
   }
 
   .hero-title {
@@ -431,7 +451,12 @@ a {
   .hero-img {
     transform: none;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    order: 2;
+  }
+
+  .hero-text {
+    order: 1;
   }
 
   .section-title {
@@ -467,6 +492,10 @@ a {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
   }
 }
